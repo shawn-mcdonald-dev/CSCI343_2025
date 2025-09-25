@@ -20,7 +20,7 @@ export default function BaseScreen(props) {
       ]}
     >
       <View style={styles.titleContainer}>
-        <Title>La Bella Trattoria</Title>
+        <Title>Wicked Tuna</Title>
       </View>
 
       <View style={styles.imageContainer}>
@@ -33,25 +33,25 @@ export default function BaseScreen(props) {
       <View style={styles.infoContainer}>
         <Text
           style={styles.infoText}
-          onPress={() => Linking.openURL("tel:5551234567")}
+          onPress={() => Linking.openURL("tel:8436519987")}
         >
-          (555) 123-4567
+          (843) 6519987
         </Text>
 
         <Text
           style={styles.infoText}
           onPress={() =>
-            Linking.openURL("https://maps.app.goo.gl/example-restaurant-link")
+            Linking.openURL("https://maps.app.goo.gl/23VhFQzybpLCuNU17")
           }
         >
-          123 Ocean Ave{"\n"}Seaside City{"\n"}CA 90210
+          4123 US-17 BUS{"\n"}Murrells Inlet{"\n"}SC 29576
         </Text>
 
         <Text
           style={styles.infoText}
-          onPress={() => Linking.openURL("https://labellatrattoria.example/")}
+          onPress={() => Linking.openURL("https://www.thewickedtuna.com/")}
         >
-          www.labellatrattoria.example
+          www.thewickedtuna.com
         </Text>
       </View>
 
