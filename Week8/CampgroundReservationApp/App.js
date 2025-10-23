@@ -22,7 +22,6 @@ export default function App() {
           "Papernotes-Bold": require("./assets/fonts/Papernotes Bold.ttf"),
           "Papernotes-Sketch": require("./assets/fonts/Papernotes Sketch.ttf"),
         });
-        // any other async startup tasks can go here
       } catch (e) {
         console.warn(e);
       } finally {
@@ -41,7 +40,6 @@ export default function App() {
   }, [appIsReady]);
 
   if (!appIsReady) {
-    // keep splash screen visible; optionally show a loader for web/dev
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <ActivityIndicator size="large" />

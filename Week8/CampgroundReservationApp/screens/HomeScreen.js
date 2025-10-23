@@ -14,24 +14,8 @@ import {
 import Title from "../components/Title";
 import NavButton from "../components/NavButton";
 import colors from "../constants/colors";
-import DateTimePickerModal from "react-native-modal-datetime-picker";
-import { Picker } from "@react-native-picker/picker";
-
-/*
-  HomeScreen functionality:
-  - Background image with color overlay
-  - Title (custom component)
-  - Check-in datetime text -> opens datetime picker (stays up until confirm)
-  - Check-out datetime text -> opens datetime picker (stays up until confirm)
-  - Number of guests text -> opens modal with Picker (1..15)
-  - Number of campsites text -> opens modal with Picker (1..5)
-  - Reserve Now button (custom component NavButton)
-  - After pressing Reserve Now, selections are shown below the button
-
-  Notes:
-  - Place a background image at ./assets/images/camp-bg.jpg (placeholder)
-  - You can change text sizes / paddings to fit tablet/landscape.
-*/
+import DateTimePickerModal from "react-native-modal-datetime-picker"; // datetime picker
+import { Picker } from "@react-native-picker/picker"; // wheel picker
 
 const HomeScreen = () => {
   const [checkIn, setCheckIn] = useState(null);
